@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body,.shop,.client,.updates {
+    width: 100%;
+    height: 100vh;
+}
+
+.shop {
+    height: fit-content;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image-20240902T140005Z-001/image/banner-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0 1px  rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: tomato;
+}
+
+.logo {
+    transform: scale(0.5);
+}
+
+
+.icons {
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.icons a:not(:last-child):hover {
+    color: tomato;
+}
+
+.home-content {
+    width: 40%;
+    margin-left: 70px;
+    margin-top: 15%;
+    position: relative;
+}
+
+.home-content p:first-child {
+    color: tomato;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.home-content p:last-of-type{
+    color: gray;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+.home-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.home-content button {
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.arow:hover{
+    background-color: black;
+}
+
+.arow:hover a{
+    color: white;
+}
+
+.shop h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.shop h1 span {
+    color: tomato;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.shop-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.shop-item {
+    flex-basis: auto;
+}
+
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.rate div:first-child {
+    color: orange;
+}
+
+.shop-item p:last-child {
+    font-weight: bold;
+}
+
+.sale::before {
+    content: 'SALE';
+    background-color: green;
+    color: white;
+    position: absolute;
+    margin: 10px 10px;
+    padding: 3px 15px;
+    font-weight: 400;
+}
+
+.hot::before {
+    content: 'HOT';
+    background-color: green;
+    color: white;
+    position: absolute;
+    margin: 10px 10px;
+    padding: 3px 15px;
+    font-weight: 400;
+}
+
+.new::before {
+    content: 'NEW';
+    background-color: green;
+    color: white;
+    position: absolute;
+    margin: 10px 10px;
+    padding: 3px 15px;
+    font-weight: 400;
+}
+
+.image:hover {
+    transform: scale(0.9);
+
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.client {
+    background-color: #eee;
+    height: fit-content;
+    margin: auto 0;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.updates-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .image {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+.updates .container h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.updates {
+    height:fit-content;
+}
+
+.card {
+    width: 450px;
+    flex-basis: auto;   
+}
+
+.updates .container {
+    margin-top: 100px;
+}
+
+.card h4 {
+    margin-top: 10px;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+.docs {
+    background-color: #eee;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.docs .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: self-start;
+    margin:100px 230px;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.copy {
+    text-align: center;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+@media (min-width:1024px) {
+    nav .icons {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:1082px) {
+    nav .icons {
+        margin: 0 auto;
+    }
+    .home-content {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width:1024px) {
+    .logo {
+        margin: 0 auto;
+    }
+    .home-content h1 {
+        font-size: 40px;
+    }
+    .home-content {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:870px) {
+    .logo {
+        margin: 0 auto;
+    }
+    .home-content h1 {
+        font-size: 40px;
+    }
+    .home-content {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:719px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width:545px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card .image {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .card {
+        width: 300px;
+        flex-basis: auto;   
+    }
+}
+
+@media (max-width:600px) {
+    .docs .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-items: self-start;
+        margin: 30px auto;
+    }
+}
+@media (max-width:430px) {
+    ul {
+        gap: 30px;
+    }
+}
+
+@media (max-width:350px) {
+    ul {
+        gap: 20px;
+    }
+}
+
+
